@@ -1,0 +1,193 @@
+html {
+    display: table;
+    width: 100%
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #444;
+    background-color: #000;
+    perspective: 1000
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+canvas {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated
+}
+
+button {
+    font: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 8px 16px;
+    color: #000;
+    text-shadow: 0 1px 2px hsla(0,0%,100%,.15);
+    background-color: #ad68d9;
+    background-image: linear-gradient(#ad68d9,#a960d7);
+    box-shadow: inset 0 0 2px hsla(0,0%,100%,.15);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .15s ease-out
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(#c391e3,#bf89e1)
+}
+
+button:active {
+    transform: scale(.95);
+    opacity: .5
+}
+
+audio {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden
+}
+
+@keyframes Cue-In {
+    0% {
+        opacity: 0;
+        transform: scale(.1) rotateX(45deg)
+    }
+
+    to {
+        transform: scale(1) rotateX(0)
+    }
+}
+
+.cue-in {
+    animation: Cue-In 2s ease-in-out
+}
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+#animatedButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#changingText {
+    font-size: 18px;
+}
+
+#errorMessage {
+    color: #2ecc71; /* Vert */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+#colorButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+#animatedButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#changingText {
+    font-size: 18px;
+}
+
+#errorMessage {
+    color: #2ecc71; /* Vert */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.background-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    width: 100vw; /* Adjust the width as needed */
+    height: 100vh; /* Adjust the height as needed */
+}
+body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative; /* Add this to make sure the container is positioned relative to the body */
+    z-index: 1; /* Add this to ensure the container appears above the background elements */
+}
